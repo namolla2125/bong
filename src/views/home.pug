@@ -1,0 +1,31 @@
+doctype html
+html(lang="ko")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 방명록
+    link(rel="stylesheet", href="/public/css/index.css")
+  body 
+    h1 https://namollatoolbox.netlify.app/ 방명록
+    div#send 
+      h2 방명록 작성하기
+      table
+       tr 
+        td
+          input#send-name(type="text", placeholder="닉네임을 입력하세요.", required)
+       tr 
+        td
+          textarea#send-text(placeholder="내용을 입력하세요.", required)
+       tr 
+        td
+          button#send-to 작성 하기
+      
+      
+    div#bong
+      div.bong
+        h3 2023-11-21 18:47:32
+        p 작성자: 개발자
+        p 방명록을 작성해보세요!!
+        hr
+  script(src="/public/js/app.js")

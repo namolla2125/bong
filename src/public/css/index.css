@@ -1,0 +1,31 @@
+input#send-name {
+  width: 30%;
+  height: 1.5em;
+  border: none;
+  border-radius: 20px;
+  resize: none;
+  background-color: #eaeaea;
+  text-align: center;
+}
+textarea#send-text {
+  width: 30%;
+  height: 6.25em;
+  border: none;
+  border-radius: 20px;
+  resize: none;
+  background-color: #eaeaea;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button#send-to {
+  width: 30%;
+  height: 2em;
+  border: none;
+  border-radius: 20px;
+  resize: none;
+  background-color: #eaeaea;
+  text-align: center;
+}
+table {
+  width: 100%;
+}
