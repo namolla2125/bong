@@ -2,6 +2,10 @@ import http from "http";
 import WebSocket from "ws";
 import express from 'express';
 import path from "path";
+var http = require("http");
+var WebSocket = require("ws");
+var express = require("express");
+var path = require("path");
 // const sqlite3 = require('sqlite3').verbose();
 // const db = new sqlite3.Database("./public/db/index.db");
 
