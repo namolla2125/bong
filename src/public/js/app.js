@@ -1,4 +1,4 @@
-const socket = new WebSocket(`ws://${window.location.host}`);
+const socket = new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`);
 
 const send_name_e = document.getElementById("send-name");
 const send_text_e = document.getElementById("send-text");
