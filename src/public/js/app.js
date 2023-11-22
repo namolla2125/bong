@@ -1,5 +1,8 @@
-const socket = new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`);
+function ServerConnect(){
+  const socket = new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`);
+}
 
+ServerConnect();
 const send_name_e = document.getElementById("send-name");
 const send_text_e = document.getElementById("send-text");
 const send_to_e = document.getElementById("send-to");
@@ -43,7 +46,10 @@ socket.addEventListener("message", (message) => {
 })
 
 socket.addEventListener("close", () => {
-  console.log("서버와 연결이 끊김")
+  console.log("서버와 연결이 끊김");
+  console.log("서버와 연결 시도 중");
+  ServerConnect();
+  
 })
 
 
