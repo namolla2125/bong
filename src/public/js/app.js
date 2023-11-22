@@ -7,11 +7,11 @@ const send_name_e = document.getElementById("send-name");
 const send_text_e = document.getElementById("send-text");
 const send_to_e = document.getElementById("send-to");
 
-socket.addEventListener("open", () => {
+new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventListener("open", () => {
   console.log("서버와 연결됨") 
 })
 
-socket.addEventListener("message", (message) => {
+new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventListener("message", (message) => {
   console.log("서버에서 메시지를 보냄, 내용 : \"", message.data, "\"")
   if(message.data === "작성 완료"){
     alert(`서버에서 메시지를 보냄, 내용 : " ${message.data} "`)
@@ -45,7 +45,7 @@ socket.addEventListener("message", (message) => {
   
 })
 
-socket.addEventListener("close", () => {
+new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventListener("close", () => {
   console.log("서버와 연결이 끊김");
   console.log("서버와 연결 시도 중");
   ServerConnect();
