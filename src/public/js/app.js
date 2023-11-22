@@ -49,7 +49,7 @@ new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventLis
   console.log("서버와 연결이 끊김");
   console.log("서버와 연결 시도 중");
   ServerConnect();
-  
+  console.log("다시 서버와 연결 됨");
 })
 
 
