@@ -6,6 +6,7 @@ ServerConnect();
 const send_name_e = document.getElementById("send-name");
 const send_text_e = document.getElementById("send-text");
 const send_to_e = document.getElementById("send-to");
+var w_val = 1;
 
 new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventListener("open", () => {
   console.log("서버와 연결됨") 
@@ -52,7 +53,7 @@ new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventLis
 })
 
 
-send_to_e.onclick = function(){
+send_to_e.addEventListener("click", () => {
   if( send_name_e.value !== "" && send_text_e.value !== ""  ){
     var name_v = send_name_e.value;
     var text_v = send_text_e.value;
@@ -60,5 +61,5 @@ send_to_e.onclick = function(){
         new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).send(JSON.stringify({ "name": name_v, "text": text_v }));
     }
   }
-}
+});
 
