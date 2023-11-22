@@ -57,9 +57,8 @@ send_to_e.onclick = function(){
     var name_v = send_name_e.value;
     var text_v = send_text_e.value;
     new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).onopen = () => {
-        new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).send(temp);
+        new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).send(JSON.stringify({ "name": name_v, "text": text_v }));
     }
-    socket.send(JSON.stringify({ "name": name_v, "text": text_v }));
   }
 }
 
