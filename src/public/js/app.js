@@ -18,7 +18,6 @@ new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventLis
     send_name_e.value = "";
     send_text_e.value = "";
   }else{
-    console.log('a')
     const serverToDBData = JSON.parse(message.data)
     
     serverToDBData.forEach(d => {
