@@ -75,7 +75,7 @@ wss.on("connection", (socket) => {
       var m = addZero(date.getMonth() + 1);
       var d = addZero(date.getDate());
 
-      var h = addZero(date.getHours());
+      var h = addZero(date.getHours() + 9);
       var tm = addZero(date.getMinutes());
       var s = addZero(date.getSeconds());
   
