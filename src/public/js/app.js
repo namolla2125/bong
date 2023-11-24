@@ -61,6 +61,9 @@ new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).addEventLis
       var socket = new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`);
       new WebSocket(`ws://port-0-bong-jvvy2blm905km0.sel5.cloudtype.app/`).onopen = () => {
         socket.send(JSON.stringify({ "name": name_v, "text": text_v }));
+        alert("작성 완료");
+        send_name_e.value = "";
+        send_text_e.value = "";
       }
     }
   });
